@@ -8,3 +8,10 @@ You can install the CLI with `pipx` (recommended):
 
 ```bash
 pipx install git+https://github.com/Gdev45/weather-alert.git
+
+
+```
+## How to run
+
+```bash
+weather-alert
