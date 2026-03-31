@@ -1,5 +1,5 @@
 [project]
-name = "weather-alerts"
+name = "weather-alert"
 version = "0.1.0"
 description = "Terminal weather alerts for UK and USA"
 authors = [{ name = "Your Name" }]
