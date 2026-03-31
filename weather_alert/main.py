@@ -114,9 +114,9 @@ def display_uk(xml_data):
 # --- MAIN UI ---
 def main():
     console.print(Panel.fit(
-        "[bold cyan]⚡ WEATHER ALERTS ⚡[/bold cyan]\n"
+        "[red]⚡ WEATHER ALERTS ⚡[/red]\n"
         "Get live severe weather warnings",
-        border_style="cyan"
+        border_style="orange3"
     ))
 
     choice = console.input("\n[bold]Choose region ([green]UK[/green]/[blue]USA[/blue]): [/bold]").strip().lower()
