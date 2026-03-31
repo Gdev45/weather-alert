@@ -114,7 +114,7 @@ def display_uk(xml_data):
 # --- MAIN UI ---
 def main():
     console.print(Panel.fit(
-        "[red]         WEATHER ALERTS [/red]\n"
+        "[red]        WEATHER ALERTS [/red]\n"
         "Get live severe weather warnings",
         border_style="orange3"
     ))
