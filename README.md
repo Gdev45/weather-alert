@@ -1,4 +1,4 @@
-# ⚡ Weather Alert CLI
+# Weather Alerts CLI
 
 Terminal tool for live weather warnings (UK & USA), color-coded and easy to read.
 
