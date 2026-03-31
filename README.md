@@ -14,4 +14,4 @@ pipx install git+https://github.com/Gdev45/weather-alert.git
 ## How to run
 
 ```bash
-weather-alert
+weather-alerts
