@@ -1,5 +1,5 @@
 [project]
-name = "weather-alert"
+name = "weather-alerts"
 version = "0.1.0"
 description = "Terminal weather alerts for UK and USA"
 authors = [{ name = "Your Name" }]
@@ -7,7 +7,7 @@ dependencies = ["requests", "rich"]
 requires-python = ">=3.8"
 
 [project.scripts]
-weather-alert = "weather_alert.main:cli"
+weather-alerts = "weather_alert.main:cli"
 
 [build-system]
 requires = ["setuptools"]
