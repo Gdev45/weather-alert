@@ -10,7 +10,7 @@ from rich import box
 console = Console()
 
 
-# quick severity → color helper
+
 def pick_color(level):
     level = level.lower()
 
@@ -26,7 +26,7 @@ def pick_color(level):
     return "cyan"
 
 
-# --- USA (NOAA) ---
+
 def get_usa():
     url = "https://api.weather.gov/alerts/active"
 
@@ -38,7 +38,7 @@ def get_usa():
         return []
 
 
-# --- UK (RSS fallback) ---
+
 def get_uk():
     url = "https://www.metoffice.gov.uk/public/data/PWSCache/WarningsRSS/Region/uk"
 
@@ -50,7 +50,7 @@ def get_uk():
         return None
 
 
-# --- render USA ---
+
 def show_usa(alerts):
     if not alerts:
         console.print(Panel("[green]No active alerts 🇺🇸[/green]", title="USA Weather"))
@@ -62,7 +62,7 @@ def show_usa(alerts):
     table.add_column("Severity")
     table.add_column("Headline")
 
-    for a in alerts[:15]:  # don't spam too much
+    for a in alerts[:15]:  
         props = a.get("properties", {})
 
         event = props.get("event", "N/A")
@@ -82,7 +82,7 @@ def show_usa(alerts):
     console.print(table)
 
 
-# --- render UK ---
+
 def show_uk(xml):
     if not xml:
         console.print(Panel("[green]No active alerts 🇬🇧[/green]", title="UK Weather"))
@@ -105,7 +105,7 @@ def show_uk(xml):
 
             table.add_row(title, desc[:80])
         except:
-            # ignore broken entries
+            
             continue
 
     console.print(table)
@@ -140,6 +140,6 @@ if __name__ == "__main__":
     main()
 
 
-# small alias if someone imports this
+
 def cli():
     main()
